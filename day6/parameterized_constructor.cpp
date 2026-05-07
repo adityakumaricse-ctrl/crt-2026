@@ -1,4 +1,23 @@
 #include <iostream>
 using namespace std;
-class students
-   void display()
+
+class Student {
+    int roll;
+    
+public:
+
+    Student(int r) {
+        roll = r;
+    }
+
+    void display() {
+        cout << "Roll Number: " << roll;
+    }
+};
+
+int main() {
+    Student s1(101);  
+    s1.display();
+
+    return 0;
+}
